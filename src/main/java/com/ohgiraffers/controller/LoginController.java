@@ -15,12 +15,15 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import java.util.Date;
 
 
 @WebServlet("/login")
 public class LoginController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+        System.out.println("LoginController doGet 요청 메소드 : " + new Date());
         HttpSession session=req.getSession();
 
         RequestDispatcher rd = req.getRequestDispatcher("answer");

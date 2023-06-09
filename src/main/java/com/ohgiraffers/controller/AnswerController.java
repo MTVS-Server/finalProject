@@ -1,6 +1,5 @@
 package com.ohgiraffers.controller;
 
-import com.ohgiraffers.dto.MbtiDto;
 import com.ohgiraffers.dto.User;
 import com.ohgiraffers.model.MbtiDecider;
 import com.ohgiraffers.model.MbtiServiceImpl;

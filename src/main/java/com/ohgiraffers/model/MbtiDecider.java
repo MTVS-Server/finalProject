@@ -2,8 +2,6 @@ package com.ohgiraffers.model;
 
 public class MbtiDecider {
 
-
-
     public String userMBTI;
 
     private static int iedecider = 0;
@@ -11,51 +9,43 @@ public class MbtiDecider {
     private static int tfdecider = 0;
     private static int jpdecider = 0;
 
-
-
-    public void IEDecider(String select) {
     public void Decider(String select) {
 
-        if (select == "I") {
-            this.iedecider++;
-        }}
-    public void NSDecider(String select) {
-        if (select == "N") {
-            this.nsdecider++;
-        }}
-    public void TFDecider(String select) {
-        if (select == "T") {
-            this.tfdecider++;
-        }
-    }
-    public void JPDecider(String select) {
-        if (select == "J") {
-            this.jpdecider++;
-        }
+            if (select == "I") {
+                this.iedecider++;
+            }
+            if (select == "N") {
+                this.nsdecider++;
+            }
+            if (select == "T") {
+                this.tfdecider++;
+            }
+            if (select == "J") {
+                this.jpdecider++;
+            }
     }
 
     public String MBTIDecider() {
         String userMBTI = "";
-        String result;
         if (this.iedecider >= 2) {
-            result = userMBTI + "I";
+            userMBTI += "I";
         } else {
-            result = userMBTI + "E";
+            userMBTI += "E";
         }
         if (this.nsdecider >= 2) {
-            result = userMBTI + "N";
+            userMBTI += "N";
         } else {
-            result = userMBTI + "S";
+            userMBTI += "S";
         }
         if (this.tfdecider >= 2) {
-            result = userMBTI + "T";
+            userMBTI += "T";
         } else {
-            result = userMBTI + "F";
+            userMBTI += "F";
         }
         if (this.jpdecider >= 2) {
-            result = userMBTI + "J";
+            userMBTI += "J";
         } else {
-            result = userMBTI + "P";
+            userMBTI += "P";
         }
 
         return userMBTI;

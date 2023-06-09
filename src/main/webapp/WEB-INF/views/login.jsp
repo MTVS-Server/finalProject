@@ -34,7 +34,7 @@
           <h1>sign in</h1>
           <form action="login" class="more-padding" autocomplete="off">
             <input type="text" name="userId" placeholder="username">
-            <input type="password" name="password" placeholder="password">
+            <input type="password" name="userPw" placeholder="password">
             <div class="checkbox">
               <input type="checkbox" id="remember" /><label for="remember">remember me</label>
             </div>

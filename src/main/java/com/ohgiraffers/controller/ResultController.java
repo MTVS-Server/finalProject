@@ -14,7 +14,7 @@ public class ResultController extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         MbtiDecider mbtiDecider=new MbtiDecider();
-        mbtiDecider.MBTIDecider("admin"); //최종 결과값 받아오기
+        mbtiDecider.MBTIDecider(); //최종 결과값 받아오기
 
 //        view로 이동 result 출력
 
